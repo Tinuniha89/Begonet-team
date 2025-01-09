@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BegoNet - Home and User Access</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+<header>
+    <h1>Welcome to BegoNet</h1>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile Management</a></li>
+            <li><a href="opportunity-search.html">Opportunity Search</a></li>
+            <li><a href="notifications.html">Messaging/Notifications</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="section" id="homeSection">
+        <h2>Home Page</h2>
+        <p>Your platform for connecting volunteers and non-profits.</p>
+        <button class="button" id="showLogin">Login</button>
+        <button class="button" id="showRegister">Register</button>
+    </div>
+
+    <div class="section" id="loginSection" style="display: none;">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <button class="button" type="submit">Login</button>
+        </form>
+        <p class="toggle" id="switchToRegister">Don't have an account? Register here.</p>
+    </div>
+
+    <div class="section" id="registerSection" style="display: none;">
+        <h2>Register</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <select required>
+                <option value="" disabled selected>Select Account Type</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="nonprofit">Non-Profit</option>
+            </select>
+            <button class="button" type="submit">Register</button>
+        </form>
+        <p class="toggle" id="switchToLogin">Already have an account? Login here.</p>
+    </div>
+</div>
+<footer>
+    <P>
+        © 2025 Begonet.All Rights Reserved</p> 
+    </P>
+</footer>
+<script src="css/script.js"></script> 
+
+</body>
+</html>
